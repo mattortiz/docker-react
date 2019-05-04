@@ -6,4 +6,4 @@ before_install:
   - docker build -t mattortiz/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run mattortiz/docker-react npm run test -- --coverage
+  - docker run mattortiz/docker-react npm test -- --coverage
